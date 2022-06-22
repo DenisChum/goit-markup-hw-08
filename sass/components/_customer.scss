@@ -1,0 +1,47 @@
+/* Clients */
+
+.customer {
+    &__title {
+        font-weight: 700px;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 0;
+        }
+    &__list {
+        list-style: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+
+    &__link {
+        height: 100%;
+        display: flex;
+        width: 170px;
+        height: 92px;
+        border: 1px solid rgba(175, 177, 184, 1);
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+        // transition: border-color $transition;
+        fill: $social-links-color;
+        transition: fill $transition;
+            &:hover,
+            &_:focus {
+                fill: $accent-color;
+                border-color: $accent-color;
+            }
+    }
+    &__image {
+        width: 106px;
+        height: 60px;
+    }
+}
+
+.team-network__item:not(:last-child) {
+    margin-right: 10px;
+}
