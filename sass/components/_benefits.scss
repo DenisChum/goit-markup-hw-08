@@ -1,7 +1,5 @@
 /* Benefits */
 
-
-
 .benefits__heading {
     background-color: $main-white-color;
     color: transparent;
@@ -17,14 +15,12 @@
     margin-bottom: 0;
         & .benefits__item+.benefits__item {
             margin-left: 30px;
-        }         
+        }
 }
-
-
-
 .benefits__item {
     width: 270px;
-    }
+}
+
 
 .benefits__thumb {
     @include CenterFlex ();
