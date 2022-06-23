@@ -7,9 +7,24 @@ border-bottom: 1px solid $border-color;
 }
 
 .nav {
-    @include CenterFlex ();
-    }
-
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+        @media screen and (min-width: 768px) {
+            @include CenterFlex ();
+            padding-bottom: 0;
+            padding-top: 0;
+            margin: 0 auto;
+        }
+        @media screen and (min-width:1200px) {
+                width: 1200px;
+                margin: 0 auto;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 15px;
+                padding-right: 15px;}   
+}
 .logo {
     &__inner {
 color: $logo-color;}
@@ -20,13 +35,29 @@ background-color: $main-white-color;
 color: $primary-text-color;
 letter-spacing: 0.02em;
     &__list {
-    display: flex;
-    margin-left: 93px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    color: $primary-text-color;
-    list-style-type: none;}
+    display: none;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            margin-left: 93px;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0;
+            color: $primary-text-color;
+            list-style-type: none;
+        }
+    
+        @media screen and (min-width:1200px) {
+            display: flex;
+            margin-left: 93px;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0;
+            color: $primary-text-color;
+            list-style-type: none; 
+                .main-nav__list .main-nav__item+.main-nav__item {
+                margin-left: 50px;}
+            }
+    }
 
     &__link {
     display: block;
@@ -39,24 +70,45 @@ letter-spacing: 0.02em;
     text-decoration: none;
     letter-spacing: 0.02em;
     transition: color $transition;
-    position: relative;
-    }
-    
-    &__link:hover,
-    &__link:focus {
-    color: $accent-color;
-    }
+    position: relative;}
+        &__link:hover,
+        &__link:focus {
+        color: $accent-color;
+        }
 }
 
 
+.main-nav {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+    }
+}
+
 .main-nav__list {
-display: flex;
-margin-left: 93px;
-margin-top: 0;
-margin-bottom: 0;
-padding: 0;
-color: $primary-text-color;
-list-style: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+            margin-left: 88px;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0;
+            color: $primary-text-color;
+            list-style: none;
+    }
+
+    @media screen and (min-width:1200px) {
+            display: flex;
+            margin-left: 93px;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0;
+            color: $primary-text-color;
+            list-style: none;
+    }
+
     
     & .main-nav__item+.main-nav__item {
     margin-left: 50px;}
@@ -92,36 +144,69 @@ color: $accent-color;
 position: relative;}
 
 .contact {
-    @include CenterFlex ();
-    align-items: flex-end;
-    background-color: $main-white-color;
-    list-style: none;
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: auto;
-    padding: 0;
+display: none;
+        @media screen and (min-width: 768px) {
+        display: inline-block;
+        background-color: $main-white-color;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        // width: 145px;
+        margin-left: 84px; }
+
+        @media screen and (min-width:1200px) {
+        display: flex;
+        background-color: $main-white-color;
+        list-style: none;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: auto;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+        align-items: flex-end; }
+            &.contact__item+.contact__item {
+            margin-left: 30px;}
+        }
     
-    &__item+&__item {
-        margin-left: 30px;}
-    }
+.contact__item {
+        @include CenterFlex ();
+        padding: 0;
+        text-align: center;
+        margin-left: 0;
+            @media screen and (min-width: 768px) {
+                display: inline-block;
+                background-color: $main-white-color;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+            @media screen and (min-width:1200px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                text-align: center;
+                margin-left: 0;
+            }
+}
 
 .contact__icon {
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 8px;
     fill: $little-text-color;
     transition: fill $transition;
-
         .contact__link:hover,
         .contact__link:focus & {
-            fill: $accent-color;
+        fill: $accent-color;
         }
 }
 
 .contact__link {
     color: $little-text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
     font-family: $mainfont;
@@ -129,18 +214,17 @@ position: relative;}
     font-size: 14px;
     line-height: 1.17;
     transition: color $transition;
+        @media screen and (min-width: 768px) {
+        font-size: 12px;
+        &:not(:last-child) {margin-bottom: 10px;}
+        }
 
+        @media screen and (min-width:1200px) {
+        }
         &:hover,
         &:focus {
-            color: $accent-color;
+        color: $accent-color;
         }
-}
-
-.contact__item {
-    @include CenterFlex ();
-    padding: 0;
-    text-align: center;
-    margin-left: 0;
 }
 
 .contact__icon {
@@ -148,15 +232,35 @@ position: relative;}
     margin-right: 10px;
     fill: $little-text-color;
     transition: fill $transition;
-
-        .contact__link:hover &,
-        .contact__link:focus & {
-        fill: $accent-color;
+    .contact__link:hover &,
+    .contact__link:focus & {
+    fill: $accent-color;
     }
+        @media screen and (min-width: 768px) {
+        width: 14px;
+        height: 10px;
+        margin-right: 8px;
+        } 
 }
 
+.mobile-nav {
+    margin-right: 0;
+    @media screen and (min-width: 768px) {
+        display: none;
+        }
+    @media screen and (min-width:1200px) {
+        display: none;}
+}
 
-
-
-
+.contact__icon--phone {
+    @media screen and (min-width: 768px) {
+            width: 10px;
+            height: 14px;
+        }
+        
+    // @media screen and (min-width:1200px) {
+    //     width: 10px;
+    //     height: 16px;
+            // }
+}
 

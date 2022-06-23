@@ -1,11 +1,31 @@
 .logo {
-color: $accent-color;
-font-family: $LogoFont;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-text-decoration: none;
-margin-bottom: 0;
+    color: $accent-color;
+    font-family: $LogoFont;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2.01;
+    text-decoration: none;
+    margin-bottom: 0;
+    
+    @media screen and (min-width: 768px) {
+            color: $accent-color;
+            font-family: $LogoFont;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 1.17;
+            text-decoration: none;
+            margin-bottom: 0;
+    }
+
+        @media screen and (min-width:1200px) {
+            color: $accent-color;
+            font-family: $LogoFont;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19;
+            text-decoration: none;
+            margin-bottom: 0;
+        }
     &>.logo__label {
     color: $main-white-color;}
 }
