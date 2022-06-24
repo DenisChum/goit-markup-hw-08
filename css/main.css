@@ -37,23 +37,21 @@
 }
 
 .container {
-  width: 480px;
+  max-width: 480px;
+  width: 100%;
   margin-left: 0;
   margin-right: 0;
   padding-left: 15px;
-  padding-right: 10px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
-    padding: 60px 0;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
@@ -296,7 +294,6 @@
     display: inline-block;
     background-color: #FFFFFF;
     list-style: none;
-    margin: 0;
     padding: 0;
   }
   .contact__item:not(:last-child) {
@@ -311,6 +308,10 @@
     padding: 0;
     text-align: center;
     margin-left: 0;
+  }
+  .contact__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -506,16 +507,9 @@
   flex-wrap: wrap;
   margin-top: 0;
   padding-left: 0;
-  margin-bottom: 0;
 }
 @media screen and (min-width: 1200px) {
   .benefits__list {
-    width: 270px;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0;
-    padding-left: 0;
     margin-bottom: 0;
   }
   .benefits__list .benefits__item + .benefits__item {
@@ -526,25 +520,48 @@
 .benefits__item {
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: calc((100% - 30px) / 2);
+  }
+  .benefits__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .benefits__item {
     width: 270px;
+    display: block;
   }
+}
+.benefits__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .benefits__thumb {
-  padding: 25px 190px;
+  padding: 25px;
+  text-align: center;
   margin-bottom: 30px;
   width: 100%;
   height: 120px;
   border-radius: 4px;
   background-color: #F5F4FA;
 }
+@media screen and (min-width: 768px) {
+  .benefits__thumb {
+    padding: 25px;
+    width: 354px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .benefits__thumb {
-    display: flex;
+    padding: 25px;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
   }
 }
 
@@ -554,8 +571,9 @@
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  margin-top: 0;
   margin-bottom: 10px;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .benefits__text {
@@ -569,8 +587,8 @@
 }
 
 .benefits__icon {
-  max-width: 70px;
-  max-height: 70px;
+  width: 70px;
+  height: 70px;
 }
 
 /* About areas of work */
