@@ -20,9 +20,6 @@
     
     @media screen and (min-width:1200px) {
     margin-bottom: 0;
-        & .benefits__item+.benefits__item {
-            margin-left: 30px;
-        }
     }
 }
 .benefits__item {
@@ -36,6 +33,9 @@
         @media screen and (min-width:1200px) {
             width: 270px;
             display: block;
+            margin-left: 0;
+            &:not(:last-child) {
+            margin-right: 30px;}
 
     }
         &:not(:last-child) {
