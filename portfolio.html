@@ -16,6 +16,12 @@
         <header class="page-header">
             <div class="container nav">
             <a href="./index.html" target="_self" class="logo">Web<span class="logo__inner">Studio</span></a>
+            <button class="mobile-nav" type="button">
+                <svg class="mobile-nav__image" width="24" height="16">
+                    <use href="./images/menu_24px.svg#mobile-nav"></use>
+                    <use href="./images/spraitlast.svg#icon-close-black"></use>
+                </svg>
+            </button>
             <nav class="main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item"><a class="main-nav__link" href="./index.html">Студия</a></li>
@@ -42,7 +48,7 @@
             </div>
         </header>
     <!--Main content-->
-    <!-- <main class="main">
+    <main class="main">
         <section class="section filter">
             <h1 class="filter__title">Список работ</h1>
             <ul class="filter__list">
@@ -60,7 +66,16 @@
                             <p class="examples__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
-                            <img src="./images/technocrack.jpg" alt="технокряк" width="370" height="294">
+                            <!-- <img src="./images/technocrack.jpg" alt="технокряк" width="370" height="294"> -->
+                            <picture class="examples__picture">
+                                <source srcset="./images/team/productdesigner.jpg 1200px, 
+                                    ./images/team/prod-des-desktop2x.jpg 2x" width="270", media="(min-width:1200px)" />
+                                <source srcset="./images/team/pro-desing-tablet1x.jpg    1x,
+                                    ./images/team/pro-desing-tablet2x.jpg 2x" width="354",
+                                    media="(min-width:768px)" />
+                                <img class="" srcset="./images/examples/technokrack-mob2x.jpg" src="./images/examples/technokrack-mob1x.jpg"
+                                    width="450" alt="project1" />
+                            </picture>
                         </div>
                         <div class="examples__wrapper">
                             <h2 class="examples__title">Технокряк</h2>
@@ -182,7 +197,7 @@
             </ul>
             </div>
         </section>
-    </main> -->
+    </main>
     <!--Footer-->
     <!-- <footer class="footer-main">
         <div class="footer-main__wrapper">

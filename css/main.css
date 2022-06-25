@@ -474,6 +474,7 @@
   border-radius: 4px;
   padding: 6px 22px;
   border: none;
+  font-family: "Roboto", sans-serif;
 }
 
 .filter__list .filter__item + .filter__item {
@@ -1418,10 +1419,54 @@
 .filter__list {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: start;
   padding-bottom: 50px;
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
+}
+@media screen and (min-width: 1200px) {
+  .filter__list {
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+    padding-left: 40px;
+  }
+}
+
+.filter__item:nth-child(n+4):nth-child(-n+5) {
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .filter__item:nth-child(n+4):nth-child(-n+5) {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter__item:nth-child(n+4):nth-child(-n+5) {
+    margin-top: 0;
+  }
+}
+
+.filter__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc((100% - 16px) / 3);
+}
+@media screen and (min-width: 768px) {
+  .filter__list {
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter__list {
+    margin-top: 0;
+  }
 }
 
 .examples__list {
