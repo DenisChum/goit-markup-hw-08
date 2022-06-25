@@ -21,6 +21,9 @@
     padding: 60px 0;
     max-width: 480px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
 
     @media screen and (min-width: 768px) {
         padding: 60px 0;
@@ -39,7 +42,7 @@
 .container {
     max-width: 480px;
     width: 100%;
-    // margin: 0 auto;
+    margin: 0 auto;
     margin-left: 0;
     margin-right: 0;
     padding-left: 15px;
@@ -48,19 +51,18 @@
 
     @media screen and (min-width: 768px) {
             max-width: 768px;
-            // padding: 60px 0;
-            // margin: 0 auto;
-            // padding-left: 15px;
-            // padding-right: 15px;
+            margin: 0 auto;
+            padding-left: 15px;
+            padding-right: 15px;
     
         }
     
         @media screen and (min-width:1200px) {
             max-width: 1200px;
             margin: 0 auto;
-            margin-left: auto;
-            margin-right: auto;
             padding-left: 15px;
             padding-right: 15px;
+            padding-bottom: 0;
+            padding-top: 0;
         }
 }
