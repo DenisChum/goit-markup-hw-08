@@ -18,6 +18,10 @@
             color: var $main-white-color;
             background-color: $button_hero-hover-color;
         }
+    @media screen and (min-width:1200px){
+        z-index: 1;
+        
+    }
 }
 .button-secondary {
     color: $primary-text-color;

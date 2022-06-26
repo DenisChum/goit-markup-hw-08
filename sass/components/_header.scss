@@ -4,6 +4,8 @@
 .page-header {
 background-color: $main-white-color;
 border-bottom: 1px solid $border-color;
+position: relative;
+
 }
 
 .nav {
@@ -247,24 +249,16 @@ display: none;
         } 
 }
 
-.mobile-nav {
-    margin-right: 0;
-    @media screen and (min-width: 768px) {
-        display: none;
-        }
-    @media screen and (min-width:1200px) {
-        display: none;}
-}
+
 
 .contact__icon--phone {
     @media screen and (min-width: 768px) {
             width: 10px;
             height: 14px;
-        }
-        
-    // @media screen and (min-width:1200px) {
-    //     width: 10px;
-    //     height: 16px;
-            // }
+    }
 }
+
+.mobile-nav__image {
+width: 24px;
+height: 16px;}
 
