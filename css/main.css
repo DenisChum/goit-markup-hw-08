@@ -958,6 +958,8 @@
     padding-left: 15px;
     padding-right: 15px;
     align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -1148,7 +1150,8 @@
 }
 @media screen and (min-widht: 1200px) {
   .email-button {
-    display: flex;
+    display: inline-flex;
+    margin-left: 0px 0px 0px 12px;
   }
 }
 .email-button__image {
@@ -1194,6 +1197,12 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .email-button {
+    display: inline-flex;
+    margin-left: 12px;
+  }
+}
 /* modal window */
 .backdrop {
   position: fixed;

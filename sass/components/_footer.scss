@@ -43,6 +43,8 @@
             padding-left: 15px;
             padding-right: 15px;
             align-items: baseline;
+            flex-direction: row;
+            justify-content: space-between;
             }
     }
 }
@@ -240,13 +242,12 @@
     box-shadow: none;
     transition: box-shadow $transition;
     display: block;
-        @media screen and (min-widht: 768px) {
-            }
         @media screen and (min-widht: 1200px) {
-            display: flex;
-            // margin-left: 0px 0px 0px 12px;
+            display: inline-flex;
+            margin-left: 0px 0px 0px 12px;
             }
-    &__image {
+        
+            &__image {
         fill: $main-white-color;
         vertical-align: middle;
         margin-left: 10px;
@@ -289,3 +290,7 @@
         }
 }
 
+@media screen and (min-width: 1200px){
+.email-button {display: inline-flex;
+    margin-left: 12px;}
+}
