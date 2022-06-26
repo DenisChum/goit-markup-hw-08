@@ -36,6 +36,7 @@
     padding: 6px 22px;
     border: none;
     font-family: $mainfont;
+    transition: $transition;
 }
 
 .filter__list .filter__item+.filter__item {

@@ -17,12 +17,9 @@
         display: flex;
         height: 252px;
         }
-    
     &__wrapper {
         display: block;
         margin: 0 auto;
-        margin-left: auto;
-        margin-right: auto;
         padding-left: 15px;
         padding-right: 15px;
         max-width: 480px;
@@ -30,6 +27,7 @@
         text-align: center;
             @media screen and (min-width:768px) {
             max-width: 768px;
+            margin: 0 auto;
             display: flex; 
             flex-wrap: wrap;
             justify-content: space-around; }
@@ -38,24 +36,18 @@
             display: flex;
             max-width: 1200px;
             margin: 0 auto;
-            margin-left: auto;
-            margin-right: auto;
             padding-left: 15px;
             padding-right: 15px;
             align-items: baseline;
-            flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-start;
             }
     }
 }
-
 
     .container {
         &.footer{
     display: inline-block;
     padding: 0px;
-    margin-left: 0;
-    margin-right: 0;
     margin-bottom: 60px;
         @media screen and (min-width:768px) {
         width: 232px;}
@@ -65,6 +57,7 @@
             padding: 0px;
             margin-left: 0;
             margin-right: 70px;
+            text-align: left;
         }
     }
 }
@@ -122,7 +115,7 @@
         @media screen and (min-widht:768px) {
         }
         
-        @media screen and (min-widht:1200px) {
+        @media screen and (min-width:1200px) {
             display: flex;
             flex-wrap: wrap;
             width: 206px;
@@ -202,7 +195,10 @@
     font-family: $mainfont;
     text-transform: uppercase;
     margin-bottom: 20px;
-    margin-top: 0; }
+    margin-top: 0; 
+            @media screen and (min-width:1200px) {
+            text-align: left;}
+    }
     &__input {
     background-color: $bg-footer-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
