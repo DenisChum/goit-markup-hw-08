@@ -12,6 +12,7 @@
         flex-wrap: wrap;
         margin-top: 0;
         padding-left: 0;
+        margin-bottom: 0;
     @media screen and (min-width:768px) {
 
     }
@@ -33,9 +34,22 @@
             &:not(:last-child) {
             margin-right: 30px;}
             }
-    @media screen and (min-width:1200px) {
-    margin-bottom: 0;}
+        @media screen and (min-width:1200px) {
+        margin-bottom: 0;} 
 }
+
+.benefits__item:not(:last-child) {
+margin-bottom: 30px;
+    @media screen and (min-width:1200px) {
+            margin-bottom: 0;
+        }
+}
+.benefits__item:nth-child(3) {
+    @media screen and (min-width:768px) {
+    margin-bottom: 0;
+    }
+}
+
 
 
 .benefits__thumb {
@@ -73,6 +87,7 @@
     letter-spacing: 0.03em;
     margin-bottom: 10px;
     margin-top: 30px;
+    text-align: center;
 }
 
 
@@ -83,8 +98,11 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-top: 0;
     margin-bottom: 0;
 }
+
+
 
 
 .benefits__icon {
