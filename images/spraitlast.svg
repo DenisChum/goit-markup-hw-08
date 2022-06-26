@@ -86,8 +86,8 @@
 <symbol id="mobile-nav" width="24" height="16" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg">
 <path clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"/>
 </symbol>
-<symbol id="mobile-nav1" width="24" height="16" viewBox="0 0 24 16"  xmlns="http://www.w3.org/2000/svg" fill="none">
-<path clip-rule="evenodd" d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"/>
+<symbol id="icon-mobile-menu" viewBox="0 0 32 32">
+    <path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
 </symbol>
 </defs>
 </svg>

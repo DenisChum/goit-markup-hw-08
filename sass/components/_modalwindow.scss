@@ -21,7 +21,7 @@
 
 .modal {
     position: absolute;
-    top: 43%;
+    top: 50%;
     left: 50%;
     max-width: 450px;
     width: 100%;
@@ -157,11 +157,14 @@
     font-family: $mainfont;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: $little-text-color;}
-        
+    color: $little-text-color;
+        @media screen and (min-width:768px) and (min-width:1200px) {
+            font-size: 14px;
+        }
+    }   
     
 .chekbox__hidden {
     position: absolute;
@@ -187,7 +190,7 @@
     margin-top: 20px;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 20px;
+    padding-left: 0;
         &__image {
         fill: #FFFFFF;
         position: absolute;
@@ -201,7 +204,6 @@
         border-radius: 2px;
         }
         &__link {
-        text-decoration: none;
         color: $accent-color;
         }
 }

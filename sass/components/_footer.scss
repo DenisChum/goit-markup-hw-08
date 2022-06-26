@@ -8,11 +8,8 @@
     padding-bottom: 60px;
     display: block;
     position: relative;
-    height: 603px;
         @media screen and (min-width:768px) {
-        height: 603px;
         }
-        
         @media screen and (min-width:1200px) {
         display: flex;
         height: 252px;
@@ -50,7 +47,9 @@
     padding: 0px;
     margin-bottom: 60px;
         @media screen and (min-width:768px) {
-        width: 232px;}
+        width: 232px;
+        margin:0;
+        margin-bottom: 60px;}
     
         @media screen and (min-width:1200px) {
             width: 231px;
@@ -289,4 +288,16 @@
 @media screen and (min-width: 1200px){
 .email-button {display: inline-flex;
     margin-left: 12px;}
+}
+
+.email-button_wrapper {
+margin:0 auto;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+    @media screen and (min-width:1200px) {
+            margin: 0;
+            padding: 0;
+            display: contents;
+    }
 }
