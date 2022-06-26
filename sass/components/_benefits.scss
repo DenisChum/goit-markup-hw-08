@@ -13,11 +13,8 @@
         margin-top: 0;
         padding-left: 0;
     @media screen and (min-width:768px) {
-    
-    
-        
+
     }
-    
     @media screen and (min-width:1200px) {
     margin-bottom: 0;
     }
@@ -29,18 +26,15 @@
             &:nth-child(odd) {
             margin-right: 30px;}
         }
-    
         @media screen and (min-width:1200px) {
             width: 270px;
             display: block;
             margin-left: 0;
             &:not(:last-child) {
             margin-right: 30px;}
-
-    }
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
+            }
+    @media screen and (min-width:1200px) {
+    margin-bottom: 0;}
 }
 
 

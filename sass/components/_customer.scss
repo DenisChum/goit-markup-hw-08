@@ -82,14 +82,23 @@
     &__title {
         @media screen and (min-width:480px) and (max-width:1200px) {
         font-size: 28px;}
+        @media screen and (min-width:480px) and (max-width:1200px) {
+        font-size: 36px;
+        margin-bottom: 50px;
+        }
     }
 }
 
 
 .customer__link {
-@media screen and (min-width:1200px) {
+    @media screen and (min-width:1200px) {
         width: 170px;
     }
+}
+
+@media screen and (min-width:1200px) {
+.customer__link:last-child {
+    margin-right: 0;}
 }
 
 .team-network__item:not(:last-child) {
