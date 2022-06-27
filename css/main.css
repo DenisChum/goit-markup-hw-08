@@ -1460,7 +1460,7 @@
   padding-left: 0;
 }
 .chekbox__image {
-  fill: #FFFFFF;
+  fill: #ffffff;
   position: absolute;
   opacity: 0;
   background-color: #FFFFFF;
@@ -1486,7 +1486,7 @@
 
 .chekbox__hidden:checked + .chekbox__image {
   opacity: 1;
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 body.modal-open {
@@ -1826,6 +1826,12 @@ body.modal-open {
   padding-top: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  body.no-scroll {
+    overflow: hidden;
+  }
+}
+
 .contact__link.tel {
   text-decoration: none;
   color: #2196F3;
@@ -1844,6 +1850,8 @@ body.modal-open {
   justify-content: start;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  row-gap: 8px;
 }
 .menu-container-network__link {
   cursor: pointer;
