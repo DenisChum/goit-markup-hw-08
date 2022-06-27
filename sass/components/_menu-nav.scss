@@ -63,7 +63,7 @@ fill: $accent-color;
 
 .mobile-nav__menu-container {
     &__navigation {
-    margin-bottom: 302px;}
+    margin-bottom: auto;}
     &__item {
     list-style: none;
     font-size: 40px;
@@ -108,6 +108,10 @@ margin-bottom: 64px;
             margin-bottom: 32px;
         }
     }
+}
+
+.mobile-nav__menu-container.mobile-nav__menu-container.is-open .menu-container-contacts {
+padding-top: 20px;
 }
 
 .contact__link.tel {

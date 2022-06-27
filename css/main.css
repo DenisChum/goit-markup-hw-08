@@ -1777,7 +1777,7 @@ body.modal-open {
 }
 
 .mobile-nav__menu-container__navigation {
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 .mobile-nav__menu-container__item {
   list-style: none;
@@ -1820,6 +1820,10 @@ body.modal-open {
 }
 .menu-container-contacts__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mobile-nav__menu-container.mobile-nav__menu-container.is-open .menu-container-contacts {
+  padding-top: 20px;
 }
 
 .contact__link.tel {
